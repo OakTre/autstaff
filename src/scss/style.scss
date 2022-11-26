@@ -1,0 +1,75 @@
+/* stylelint-disable custom-property-empty-line-before */
+/* stylelint-disable color-hex-case */
+/* stylelint-disable no-invalid-position-at-import-rule */
+
+:root {
+  /* typography  */
+  --main-ff: inter, sans-serif;
+  --second-ff: montserrat, sans-serif;
+
+  /* colors */
+  --color-light-blue: #5E79EC;
+  --color-blue: #405BCF;
+  --color-dark: #323232;
+  --color-dark-grey: #777E96;
+  --color-white: #fff;
+  --color-grey: #F6F8FE;
+  --color-dark-blue: #182351;
+  --color-red: #FF1216;
+  --color-bg: var(--color-white);
+  --color-grey-600: #99a5b0;
+  --color-grey-300: #eff1f5;
+
+  --offset-100: 10rem;
+  --offset-60: 6rem;
+  --offset-48: 4.8rem;
+  --offset-40: 4rem;
+  --offset-32: 3.2rem;
+  --offset-24: 2.4rem;
+  --offset-20: 2rem;
+  --offset-16: 1.6rem;
+  --offset-12: 1.2rem;
+  --offset-8: 0.8rem;
+  --offset-4: 0.4rem;
+
+  --font-72-80-mont: 700 7.1rem/8rem var(--main-ff);
+  --font-47-52-mont: 700 4.7rem/5.2rem var(--main-ff);
+  --font-38-44-mont: 700 3.8rem/3.3rem var(--main-ff);
+  --font-36-52-mont: 700 3.6rem/5.2rem var(--main-ff);
+  --font-32-40-mont: 700 3.2rem/4rem var(--main-ff);
+  --font-24-32-mont: 700 2.4rem/3.2rem var(--main-ff);
+  --font-24-32-inter: 400 2.4rem/3.2rem var(--second-ff);
+  --font-20-28-mont-bold: 700 2rem/2.8rem var(--main-ff);
+  --font-20-28-mont-semibold: 600 2rem/2.8rem var(--main-ff);
+  --font-20-28-inter-reg: 400 2rem/2.8rem var(--second-ff);
+  --font-16-24-reg-inter: 400 1.6rem/2.4rem var(--second-ff);
+  --font-16-24-reg-mont: 400 1.6rem/2.4rem var(--main-ff);
+  --font-14-20-reg-inter: 400 1.4rem/2rem var(--second-ff);
+  --font-12-16-reg-inter: 400 1.2rem/1.6rem var(--second-ff);
+  --font-body: var(--font-16-24-reg-inter);
+
+  /* etc */
+  --transition: 100ms ease-in;
+  --grid-offset: var(--offset-32);
+  --content-padding: 40px;
+}
+
+@import "./helpers/**/*";
+@import "./vendor/**/*";
+@import "./settings/**/*";
+@import "./UI/all/**/*";
+@import "./UI/controls/**/*";
+@import "./UI/parts/**/*";
+@import "./pages/**/*";
+
+@include mq(lg) {
+  :root {
+    --content-padding: 20px;
+  }
+}
+
+@include mq(sm) {
+  :root {
+    --content-padding: 16px;
+  }
+}

@@ -1,0 +1,31 @@
+/* stylelint-disable selector-class-pattern */
+.logo {
+  display: inline-block;
+  max-width: 20.5rem;
+
+  @include mq(sm) {
+    height: 2rem;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: left center;
+  }
+
+  &__white {
+    display: none;
+    transform: translateY(0.3rem);
+  }
+
+  &.is-white {
+    .logo__black {
+      display: none;
+    }
+
+    .logo__white {
+      display: block;
+    }
+  }
+}

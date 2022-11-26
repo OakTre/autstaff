@@ -1,0 +1,38 @@
+/* stylelint-disable selector-class-pattern */
+/* stylelint-disable rule-empty-line-before */
+.burger-btn {
+  display: none;
+  width: 3.2rem;
+  height: 3.2rem;
+  margin-left: auto;
+
+  &__icon {
+    width: 100%;
+    height: 100%;
+    color: var(--color-light-blue);
+
+    &--close {
+      display: none;
+      height: 77%;
+      color: var(--color-white);
+    }
+  }
+
+  &.is-active {
+    .burger-btn__icon {
+      display: none;
+    }
+
+    .burger-btn__icon--close {
+      display: block;
+    }
+  }
+
+  @include mq(md) {
+    display: block;
+  }
+
+  @include mq(sm) {
+    height: 2.2rem;
+  }
+}

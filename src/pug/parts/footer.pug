@@ -1,0 +1,25 @@
+footer.footer
+  .site-container
+    .footer__row
+      a.logo.footer__logo(href="/")
+        img(src="assets/images/logo_white.svg" alt="Логотип компании")
+      .company__links
+        .company__links-item
+          a.company__iconed-link(href="tel:+74951526268")
+            +icon-mono("phone")(class="company__iconed-link-icon" width="24" height="24")
+            | +7 (495) 152-62-68
+          a.company__iconed-link(href="mailto:v@outstaff.moscow")
+            +icon-mono("mail")(class="company__iconed-link-icon" width="24" height="24")
+            | v@outstaff.moscow
+        .company__links-item
+          .company__iconed-link
+            +icon-mono("pin")(class="company__iconed-link-icon" width="24" height="24")
+            | 119180, Москва, ул. Большая Полянка, д. 23 стр. 1, ком. 2/19
+
+    .footer__copyright
+      p.footer__text
+        | © Аутстафф Сервис 2012 - 2022F
+      a.footer__text.footer__link-auto(href="/")
+        | Политика конфиденциальности
+      a.footer__link.footer__text(href="/")
+        | Информация о cookies

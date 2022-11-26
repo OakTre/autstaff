@@ -1,0 +1,32 @@
+-
+  nav = [
+    "Наши цены", "Схема работы", "Ваша выгода", "Вопрос — ответ"
+  ]
+
+header.header
+  .site-container.header__row
+    a.logo.header__logo(href="/")
+      img(src="assets/images/logo.svg" class="logo__black" alt="Логотип компании")
+      img(src="assets/images/logo_white.svg" class="logo__white" alt="Логотип компании")
+    nav.nav.header__nav
+      ul.nav__list
+        for item in nav
+          li.nav__item
+            a.nav__link(href="/")= item
+    ul.socials.header__socials
+      li.socials__item
+        a.socials__link(href="/")
+          +icon-mono("wt")(class="socials__icon _stroke" width="18" height="18")
+      li.socials__item
+        a.socials__link(href="/")
+          +icon-mono("tg")(class="socials__icon" width="18" height="18")
+      li.socials__item
+        a.socials__link(href="/")
+          +icon-mono("mail")(class="socials__icon" width="18" height="18")
+    .callback-phone.header__tel
+      a.callback-phone__link(href="tel:+74951526268") +7 (495) 152-62-68
+      button.callback-phone__btn Заказать звонок
+    button.burger-btn.js-open-menu
+      +icon-mono("burger")(class="burger-btn__icon" width="32" height="32")
+      +icon-mono("close")(class="burger-btn__icon burger-btn__icon--close" width="32" height="32")
+

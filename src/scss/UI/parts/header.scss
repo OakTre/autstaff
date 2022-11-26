@@ -1,0 +1,47 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  padding-top: 2.4rem;
+
+  @include mq(sm) {
+    padding-top: 1.6rem;
+  }
+
+  &__row {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__logo {
+    margin-right: 4.8rem;
+
+    @include mq(sm) {
+      max-width: 16.8rem;
+    }
+  }
+
+  &__socials {
+    margin-left: auto;
+
+    @include mq(md) {
+      display: none;
+    }
+  }
+
+  &__tel {
+    margin-left: 2.2rem;
+
+    @include mq(md) {
+      display: none;
+    }
+  }
+
+  &__nav {
+    @include mq(md) {
+      display: none;
+    }
+  }
+}
