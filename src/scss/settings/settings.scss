@@ -1,3 +1,4 @@
+/* stylelint-disable selector-combinator-space-after */
 /* stylelint-disable color-hex-case */
 /* stylelint-disable order/properties-order */
 /* stylelint-disable property-no-vendor-prefix */
@@ -11,6 +12,10 @@
 html {
   font-size: 10px;
   line-height: 1.2;
+
+  @include mq(custom, max, 1366) {
+    font-size: 9px;
+  }
 
   @include mq(lg) {
     font-size: 8px;
@@ -35,7 +40,8 @@ ol {
 ol {
   counter-reset: ordered-list;
 
-  & > li {
+  /* stylelint-disable-next-line selector-combinator-space-before */
+  &>li {
     counter-increment: ordered-list;
 
     &::before {
@@ -217,5 +223,22 @@ a:focus {
 
   @include mq(sm) {
     margin-bottom: 4.8rem;
+  }
+}
+
+.grey-bg {
+  background-color: var(--color-grey);
+  padding-bottom: 10rem;
+
+  @include mq(sm) {
+    padding-bottom: 4.8rem;
+  }
+}
+
+.site-heading {
+  font: var(--font-72-80-mont);
+
+  @include mq(sm) {
+    font: var(--font-38-44-mont);
   }
 }

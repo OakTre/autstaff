@@ -1,0 +1,33 @@
+.site-pagination {
+  display: flex;
+  align-items: center;
+  counter-reset: order;
+
+  .swiper-pagination-bullet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4.8rem;
+    height: 4.8rem;
+    color: var(--color-dark-grey);
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    opacity: 1;
+    counter-increment: order;
+
+    &.swiper-pagination-bullet-active {
+      color: var(--color-light-blue);
+      border-color: var(--color-light-blue);
+    }
+
+    &::before {
+      font: var(--font-20-28-mont-bold);
+      content: counter(order);
+    }
+  }
+
+  @include mq(md) {
+    justify-content: center;
+  }
+}

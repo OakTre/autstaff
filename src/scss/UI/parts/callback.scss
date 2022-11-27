@@ -1,0 +1,99 @@
+.callback {
+  margin-top: 19.9rem;
+
+  @include mq(md) {
+    margin-top: 10rem;
+  }
+
+  @include mq(sm) {
+    margin-top: 4.8rem;
+  }
+
+  &__container {
+    position: relative;
+    padding: 6rem 10.3rem;
+    color: var(--color-white);
+    background-color: var(--color-blue);
+    background-image: url("../images/shield-bg.svg");
+    background-repeat: no-repeat;
+    background-position: 130% 50%;
+    background-size: 72.1rem 68.6rem;
+    border-radius: 2.4rem;
+
+    @include mq(lg) {
+      background-position: 151% 50%;
+    }
+
+    @include mq(md) {
+      padding: 4rem 5.3rem;
+      background-size: 52.1rem 48.6rem;
+    }
+
+    @include mq(sm) {
+      padding: 4rem 1.6rem;
+      padding-bottom: 28.7rem;
+      background-image: url("../images/shield-bg-mobile.svg");
+      background-position: 50% 37.1rem;
+      background-size: cover;
+    }
+  }
+
+  &__heading {
+    max-width: 68.8rem;
+    margin-bottom: 3.2rem;
+    font: var(--font-47-52-mont);
+
+    @include mq(md) {
+      margin-bottom: 2.4rem;
+      font: var(--font-24-32-mont);
+    }
+
+    @include mq(sm) {
+      text-align: center;
+    }
+  }
+
+  &__btn-wrapper {
+    display: flex;
+    align-items: center;
+
+    @include mq(sm) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__btn-text {
+    max-width: 26.4rem;
+    margin-left: 1.6rem;
+
+    @include mq(sm) {
+      margin-top: 1.2rem;
+      margin-left: 0;
+      text-align: center;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    right: 3.7rem;
+    bottom: 0;
+    width: 38.7rem;
+    height: 41.1rem;
+    object-fit: contain;
+
+    @include mq(md) {
+      right: 0.7rem;
+      width: 28.7rem;
+      height: 30.1rem;
+    }
+
+    @include mq(sm) {
+      right: auto;
+      left: 50%;
+      width: 100%;
+      height: 26.3rem;
+      transform: translateX(-50%);
+    }
+  }
+}

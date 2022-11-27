@@ -19,4 +19,19 @@
   @include mq(sm) {
     padding: 1.6rem 4.5rem;
   }
+
+  &--white {
+    color: var(--color-light-blue);
+    background-color: var(--color-white);
+
+    @include mq(lg, min) {
+      &:hover {
+        background-color: #e2e8ff;
+      }
+    }
+
+    &:active {
+      background-color: #a3b4f5;
+    }
+  }
 }

@@ -1,0 +1,112 @@
+.feautures {
+  padding-top: 10rem;
+
+  @include mq(sm) {
+    padding-top: 4.8rem;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: var(--grid-offset);
+
+    &-col {
+      min-width: 0;
+
+      &:nth-child(1) {
+        grid-column: 2 span;
+
+        @include mq(md) {
+          display: none;
+        }
+      }
+
+      &:nth-child(2) {
+        grid-column: 10 span;
+      }
+    }
+
+    @include mq(md) {
+      display: block;
+    }
+  }
+
+  &__item {
+    h2 {
+      margin-bottom: 4.8rem;
+      font: var(--font-72-80-mont);
+
+      @include mq(md) {
+        margin-bottom: 2.4rem;
+        font: var(--font-47-52-mont);
+      }
+
+      @include mq(sm) {
+        font: var(--font-38-44-mont);
+      }
+    }
+
+    p {
+      margin-bottom: 0.8rem;
+      font: var(--font-16-24-reg-inter);
+
+      @include mq(sm) {
+        font: var(--font-14-20-reg-inter);
+      }
+    }
+
+    ul {
+      margin: 0.8rem 0;
+
+      li {
+        position: relative;
+        margin-bottom: 0.5rem;
+        padding-left: 1.5rem;
+        font: var(--font-16-24-reg-inter);
+
+        &::before {
+          position: absolute;
+          top: 1rem;
+          left: 0;
+          width: 0.4rem;
+          height: 0.4rem;
+          background-color: var(--color-light-blue);
+          border-radius: 50%;
+          content: "";
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        @include mq(sm) {
+          font: var(--font-14-20-reg-inter);
+
+          &::before {
+            top: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 6.4rem;
+
+    @include mq(md) {
+      justify-content: center;
+      margin-top: 3.2rem;
+    }
+  }
+
+  &__line {
+    display: block;
+    width: 0.8rem;
+    height: 10rem;
+    background-color: var(--color-light-blue);
+    border-radius: 1rem;
+  }
+}
