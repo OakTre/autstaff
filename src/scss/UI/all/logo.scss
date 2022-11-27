@@ -18,14 +18,4 @@
     display: none;
     transform: translateY(0.3rem);
   }
-
-  &.is-white {
-    .logo__black {
-      display: none;
-    }
-
-    .logo__white {
-      display: block;
-    }
-  }
 }

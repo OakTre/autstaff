@@ -13,7 +13,7 @@ export default () => {
         menuBtn.classList.add("is-active");
 
         menu.classList.add("is-active");
-        document.querySelector(".header__logo").classList.add("is-white");
+        document.querySelector(".header").classList.add("menu-is-open");
         disableScroll();
         menuFlag = true;
 
@@ -22,7 +22,7 @@ export default () => {
         menuBtn.classList.remove("is-active");
 
         menu.classList.remove("is-active");
-        document.querySelector(".header__logo").classList.remove("is-white");
+        document.querySelector(".header").classList.remove("menu-is-open");
 
         enableScroll();
         menuFlag = false;

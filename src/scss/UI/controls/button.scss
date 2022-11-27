@@ -1,6 +1,22 @@
 .button {
-  padding: 1rem 2rem;
+  padding: 2rem 4.9rem;
   color: var(--color-white);
-  background-color: blue;
-  border-radius: 2rem;
+  font: var(--font-16-24-bold-mont);
+  background-color: var(--color-light-blue);
+  border-radius: 7rem;
+  transition: background-color var(--transition);
+
+  @include mq(lg, min) {
+    &:hover {
+      background-color: #839bff;
+    }
+  }
+
+  &:active {
+    background-color: #506deb;
+  }
+
+  @include mq(sm) {
+    padding: 1.6rem 4.5rem;
+  }
 }

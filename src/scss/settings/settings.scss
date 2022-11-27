@@ -1,3 +1,4 @@
+/* stylelint-disable color-hex-case */
 /* stylelint-disable order/properties-order */
 /* stylelint-disable property-no-vendor-prefix */
 *,
@@ -178,6 +179,7 @@ img {
 
 .page-main {
   flex-grow: 1;
+  padding-top: var(--header-height);
 }
 
 .disable-scroll {
@@ -193,7 +195,7 @@ button:focus {
   outline: none;
 
   &.focus-visible {
-    outline: 1px solid red;
+    outline: 3px solid #777E96;
   }
 }
 
@@ -201,11 +203,19 @@ a:focus {
   outline: none;
 
   &.focus-visible {
-    outline: 1px solid red;
+    outline: 2px solid #777E96;
   }
 }
 
 .js-focus-visible button:focus:not(.focus-visible),
 .js-focus-visible a:focus:not(.focus-visible) {
   outline: none;
+}
+
+.section {
+  margin-bottom: var(--offset-100);
+
+  @include mq(sm) {
+    margin-bottom: 4.8rem;
+  }
 }

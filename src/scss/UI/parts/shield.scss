@@ -1,0 +1,42 @@
+.shield {
+  padding: var(--offset-60) 0;
+  color: var(--color-white);
+  background-color: var(--color-blue);
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: var(--grid-offset);
+
+    &::before {
+      display: block;
+      grid-column: 2 span;
+      content: "";
+    }
+
+    @include mq(md) {
+      display: block;
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  &__heading {
+    grid-column: 10 span;
+    font: var(--font-47-52-mont);
+
+    @include mq(md) {
+      font: var(--font-32-40-mont);
+    }
+
+    @include mq(sm) {
+      font: var(--font-24-32-mont);
+    }
+  }
+
+  @include mq(sm) {
+    padding: var(--offset-48) 0;
+  }
+}

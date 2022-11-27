@@ -42,6 +42,7 @@
   --font-20-28-mont-bold: 700 2rem/2.8rem var(--main-ff);
   --font-20-28-mont-semibold: 600 2rem/2.8rem var(--main-ff);
   --font-20-28-inter-reg: 400 2rem/2.8rem var(--second-ff);
+  --font-16-24-bold-mont: 700 1.6rem/2.4rem var(--second-ff);
   --font-16-24-reg-inter: 400 1.6rem/2.4rem var(--second-ff);
   --font-16-24-reg-mont: 400 1.6rem/2.4rem var(--main-ff);
   --font-14-20-reg-inter: 400 1.4rem/2rem var(--second-ff);
@@ -52,6 +53,7 @@
   --transition: 100ms ease-in;
   --grid-offset: var(--offset-32);
   --content-padding: 40px;
+  --header-height: 8.4rem;
 }
 
 @import "./helpers/**/*";
@@ -70,6 +72,7 @@
 
 @include mq(sm) {
   :root {
+    --header-height: 6.9rem;
     --content-padding: 16px;
   }
 }
