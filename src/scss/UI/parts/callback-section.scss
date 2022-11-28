@@ -1,0 +1,50 @@
+.callback-section {
+  position: relative;
+  padding: 10rem 0;
+  overflow: hidden;
+  color: var(--color-white);
+  background-color: var(--color-blue);
+
+  &__heading {
+    max-width: 58.4rem;
+    margin-bottom: 6.6rem;
+  }
+
+  &__form {
+    display: block;
+    width: 100%;
+    max-width: 58.4rem;
+
+    &-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--grid-offset);
+      width: 100%;
+    }
+  }
+
+  &__label {
+    &:last-child {
+      grid-column: 2 span;
+    }
+  }
+
+  &__form-btn-wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+
+    .agreement {
+      margin-left: 2.4rem;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    right: 0;
+    bottom: -0.3rem;
+    width: 82.9rem;
+    height: 71rem;
+    object-fit: contain;
+  }
+}

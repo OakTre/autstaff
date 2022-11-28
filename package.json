@@ -87,6 +87,7 @@
 		"vinyl-source-stream": "^2.0.0"
 	},
 	"dependencies": {
+		"gsap": "3.11.3",
 		"reset-css": "^5.0.1",
 		"swiper": "8.4.5",
 		"vanilla-lazyload": "^17.6.1"

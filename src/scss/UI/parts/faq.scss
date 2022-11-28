@@ -1,0 +1,26 @@
+.faq {
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: var(--grid-offset);
+
+    @include mq(sm) {
+      display: block;
+    }
+  }
+
+  &__block {
+    grid-column: 6 span;
+  }
+
+  &__heading {
+    @include mq(lg) {
+      font: var(--font-47-52-mont);
+    }
+
+    @include mq(sm) {
+      margin-bottom: 3.2rem;
+      font: var(--font-38-44-mont);
+    }
+  }
+}

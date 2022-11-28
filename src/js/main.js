@@ -5,6 +5,7 @@ import documenReady from './helpers/documenReady';
 import initModal from './modules/initModal';
 import openMenu from './modules/openMenu';
 import slider from './modules/slider';
+import accordion from './modules/accordion';
 
 documenReady(() => {
   window.___YOUR_PROJECT___API = { };
@@ -13,4 +14,5 @@ documenReady(() => {
   initModal();
   openMenu();
   slider();
+  accordion();
 });

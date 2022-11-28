@@ -1,0 +1,21 @@
+section.callback-section
+  img(src="assets/images/form-bg.svg" alt="Давайте обсудим вашу задачу" class="callback-section__img")
+  .site-container
+    h2.callback-section__heading.site-heading
+      | Давайте обсудим вашу задачу
+    from.callback-section__form
+      .callback-section__form-container
+        label.input-label.callback-section__label
+          span.input-label__text Имя
+          input(type="text" class="input" name="name" placeholder="Ваше имя")
+        label.input-label.callback-section__label
+          span.input-label__text Имя
+          input(type="text" class="input" name="name" placeholder="Ваше имя")
+        label.input-label.callback-section__label
+          span.input-label__text Сообщение
+          textarea(class="textarea" name="text" placeholder="Напишите нам")
+      .callback-section__form-btn-wrapper
+        button.button.button--white
+          | Отправить
+        .agreement
+          | Нажимая на кнопку «Отправить» вы соглашаетесь с #[a(heref="/") политикой конфиденциальности] и #[a(href="/") правилами обработки персональных данных]
