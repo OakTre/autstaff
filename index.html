@@ -18,7 +18,7 @@
   <body class="page-home">
     <div class="page-wrapper">
 
-      <header class="header header--bg">
+      <header class="header header--bg fix-block">
         <div class="site-container header__row">
           <a class="logo header__logo" href="/">
             <img class="logo__black" src="assets/images/logo.svg" alt="Логотип компании">
@@ -43,29 +43,23 @@
           <ul class="socials header__socials">
             <li class="socials__item">
               <a class="socials__link" href="/">
-                <svg class="icon icon-wt socials__icon _stroke" width="18" height="18">
-                  <use xlink:href="assets/images/sprites/sprite-mono.svg#wt"></use>
-                </svg>
+                <img src="assets/images/wt.svg" width="18" height="18" alt="">
               </a>
             </li>
             <li class="socials__item">
               <a class="socials__link" href="/">
-                <svg class="icon icon-tg socials__icon" width="18" height="18">
-                  <use xlink:href="assets/images/sprites/sprite-mono.svg#tg"></use>
-                </svg>
+                <img src="assets/images/tg.svg" width="18" height="18" alt="">
               </a>
             </li>
             <li class="socials__item">
               <a class="socials__link" href="/">
-                <svg class="icon icon-mail socials__icon" width="18" height="18">
-                  <use xlink:href="assets/images/sprites/sprite-mono.svg#mail"></use>
-                </svg>
+                <img src="assets/images/mail.svg" width="18" height="18" alt="">
               </a>
             </li>
           </ul>
           <div class="callback-phone header__tel">
             <a class="callback-phone__link" href="tel:+74951526268">+7 (495) 152-62-68</a>
-            <button class="callback-phone__btn">Заказать звонок</button>
+            <button class="callback-phone__btn" data-path="modal">Заказать звонок</button>
           </div>
           <button class="burger-btn js-open-menu">
             <svg class="icon icon-burger burger-btn__icon" width="32" height="32">
@@ -206,7 +200,7 @@
             </div>
           </div>
         </div>
-        <div class="grey-bg">
+        <div class="grey-bg section">
           <section class="feautures js-feautures-swiper-parent">
             <div class="site-container feautures__container">
               <div class="feautures__container-col">
@@ -278,7 +272,7 @@
               <h2 class="prices__heading site-heading">Гибкие цены и&nbsp;скидки</h2>
               <ul class="prices__list">
                 <li class="prices__item">
-                  <div class="prices-card"><span class="prices-card__tag">Тариф</span>
+                  <article class="prices-card"><span class="prices-card__tag">Тариф</span>
                     <h4 class="prices-card__legend">Стартовый</h4>
                     <p class="prices-card__legend-text">до 10 сотрудников</p>
                     <div class="prices-card__price">3 500 ₽</div>
@@ -286,10 +280,10 @@
                     </p>
                     <p class="prices-card__legend-text">за 12 месяцев</p>
                     <button class="button prices-card__btn">Выбрать тариф</button>
-                  </div>
+                  </article>
                 </li>
                 <li class="prices__item">
-                  <div class="prices-card"><span class="prices-card__tag">Тариф</span>
+                  <article class="prices-card"><span class="prices-card__tag">Тариф</span>
                     <h4 class="prices-card__legend">Средний</h4>
                     <p class="prices-card__legend-text">от 10 сотрудников</p>
                     <div class="prices-card__price">3 000 ₽</div>
@@ -297,22 +291,22 @@
                     </p>
                     <p class="prices-card__legend-text">за 12 месяцев</p>
                     <button class="button prices-card__btn">Выбрать тариф</button>
-                  </div>
+                  </article>
                 </li>
                 <li class="prices__item">
-                  <div class="prices-card"><span class="prices-card__tag">Тариф</span>
+                  <article class="prices-card"><span class="prices-card__tag">Тариф</span>
                     <h4 class="prices-card__legend">Корпоративный</h4>
                     <p class="prices-card__legend-text">Учтём все требования</p>
                     <div class="prices-card__price">от 2 000 ₽</div>
                     <p class="prices-card__legend-text">в месяц</p>
                     <button class="button prices-card__btn">Выбрать тариф</button>
-                  </div>
+                  </article>
                   <div class="prices-card__sub-text prices-card__legend-text">+20% к базовой стоимости при работе с НДС.</div>
                 </li>
               </ul>
             </div>
           </section>
-          <section class="prices-include">
+          <section class="prices-include section">
             <div class="site-container">
               <h3 class="prices-include__heading site-heading">Что входит в стоимость</h3>
               <div class="prices-include__container">
@@ -335,7 +329,208 @@
               </div>
             </div>
           </section>
+          <section class="help">
+            <div class="site-container">
+              <h2 class="help__heading site-heading">С чем мы помогаем</h2>
+              <div class="help__container">
+                <div class="help__item">
+                  <div class="help-card"><span class="help-card__tag">Скоро</span>
+                    <div class="help-card__icon-wrapper">
+                      <img src="assets/images/help/icon1.svg" alt="Кадровый учет">
+                      <h4>Кадровый учет</h4>
+                    </div>
+                    <p>Вы полностью избавляетесь от головной боли кадрового учета, Мы забираем на себя прием и увольнение сотрудников, оформление больничных и отпускных. Оформим все необходимые документы и самостоятельно подадим уведомление в органы.</p>
+                  </div>
+                </div>
+                <div class="help__item">
+                  <div class="help-card">
+                    <div class="help-card__icon-wrapper">
+                      <img src="assets/images/help/icon1.svg" alt="Кадровый учет">
+                      <h4>Кадровый учет</h4>
+                    </div>
+                    <p>Вы полностью избавляетесь от головной боли кадрового учета, Мы забираем на себя прием и увольнение сотрудников, оформление больничных и отпускных. Оформим все необходимые документы и самостоятельно подадим уведомление в органы.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
+        <section class="section results">
+          <div class="site-container">
+            <div class="results__heading-container">
+              <div class="results__heading-block">
+                <h2 class="results__heading site-heading">Все для результата</h2>
+              </div>
+              <div class="results__heading-block">
+                <div class="results__text">
+                  <p>Прозрачный и легкий процесс вывода персонала за штат от одного дня.</p>
+                  <p>Мы работаем в Москве и всех городах МО, Санкт-Петербурге и ЛО, Краснодаре, Воронеже, Туле и в других регионах.</p>
+                </div>
+              </div>
+            </div>
+            <ul class="results-steps">
+              <li class="results-steps__item-line"><span class="results-steps__item-line-inner"></span>
+              </li>
+              <li class="results-steps__item">
+                <div class="results-steps__block">
+                  <div class="results-steps__legend"><span>этап</span>
+                  </div>
+                </div>
+                <div class="results-steps__block">
+                  <h4 class="results-steps__heading">Выберите правильного партнера</h4>
+                  <div class="results-steps__content">
+                    <p>По закону 116 ФЗ услугу аутстваффинга могут предоставлять только аккредитованные компании. Нашу аккредитацию можно<a href="/">проверить на сайте Роструда</a>
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="results-steps__item">
+                <div class="results-steps__block">
+                  <div class="results-steps__legend"><span>этап</span>
+                  </div>
+                </div>
+                <div class="results-steps__block">
+                  <h4 class="results-steps__heading">Свяжитесь с нами</h4>
+                  <div class="results-steps__content">
+                    <p>Любым удобным способом:</p>
+                    <div class="contacts">
+                      <a class="tel" href="tel:+74951526268">+7 (495) 152-62-68</a>
+                      <a class="mail" href="mailto:v@outstaff.moscow">v@outstaff.moscow</a>
+                    </div>
+                    <div class="contacts-btn__wrapper">
+                      <button class="button button--small">Оставить заявку</button>
+                      <ul class="socials">
+                        <li class="socials__item">
+                          <a class="socials__link" href="/">
+                            <img src="assets/images/wt.svg" width="18" height="18" alt="">
+                          </a>
+                        </li>
+                        <li class="socials__item">
+                          <a class="socials__link" href="/">
+                            <img src="assets/images/tg.svg" width="18" height="18" alt="">
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="results-steps__item">
+                <div class="results-steps__block">
+                  <div class="results-steps__legend"><span>этап</span>
+                  </div>
+                </div>
+                <div class="results-steps__block">
+                  <h4 class="results-steps__heading">Бесплатный аудит</h4>
+                  <div class="results-steps__content">
+                    <p>По закону 116 ФЗ услугу аутстваффинга могут предоставлять только аккредитованные компании. Нашу аккредитацию можно<a href="/">проверить на сайте Роструда</a>
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="results-steps__item">
+                <div class="results-steps__block">
+                  <div class="results-steps__legend"><span>этап</span>
+                  </div>
+                </div>
+                <div class="results-steps__block">
+                  <h4 class="results-steps__heading">Заключение договора</h4>
+                  <div class="results-steps__content">
+                    <p>По закону 116 ФЗ услугу аутстваффинга могут предоставлять только аккредитованные компании. Нашу аккредитацию можно<a href="/">проверить на сайте Роструда</a>
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="results-steps__item">
+                <div class="results-steps__block">
+                  <div class="results-steps__legend"><span>этап</span>
+                  </div>
+                </div>
+                <div class="results-steps__block">
+                  <h4 class="results-steps__heading">Сопровождение вашего бизнеса</h4>
+                  <div class="results-steps__content">
+                    <ul>
+                      <li>Контролируем сроки продления разрешений и напоминаем сотрудникам о продлении.</li>
+                      <li>Контролируем сроки продления разрешений и напоминаем сотрудникам о продлении.</li>
+                      <li>Контролируем сроки продления разрешений и напоминаем сотрудникам о продлении.</li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="section faq">
+          <div class="site-container faq__container">
+            <div class="faq__block">
+              <h2 class="faq__heading site-heading">Нас часто спрашивают — мы отвечаем</h2>
+            </div>
+            <div class="faq__block">
+              <ul class="accordion__list">
+                <li class="accordion__item">
+                  <div class="accordion js-accordion">
+                    <button class="accordion__head js-drop-menu-btn"><span class="accordion__head-text">Как легально вывести сотрудников за штат?</span><span class="accordion__head-icon"></span>
+                    </button>
+                    <div class="accordion__content js-drop-menu-container">
+                      <div class="accordion__content-inner">
+                        <p>Какой процесс в бизнесе не нуждается в квалифицированных сотрудниках? Всем компаниям необходимы хорошие специалисты, но не все имеют возможность содержать огромный штат персонала. По этой причине многие украинские представители бизнеса пользуются услугами внештатников и передают бизнес-процессы на обслуживание компаний-подрядчиков.</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="accordion__item">
+                  <div class="accordion js-accordion">
+                    <button class="accordion__head js-drop-menu-btn"><span class="accordion__head-text">Как легально вывести сотрудников за штат?</span><span class="accordion__head-icon"></span>
+                    </button>
+                    <div class="accordion__content js-drop-menu-container">
+                      <div class="accordion__content-inner">
+                        <p>Какой процесс в бизнесе не нуждается в квалифицированных сотрудниках? Всем компаниям необходимы хорошие специалисты, но не все имеют возможность содержать огромный штат персонала. По этой причине многие украинские представители бизнеса пользуются услугами внештатников и передают бизнес-процессы на обслуживание компаний-подрядчиков.</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="accordion__item">
+                  <div class="accordion js-accordion">
+                    <button class="accordion__head js-drop-menu-btn"><span class="accordion__head-text">Как легально вывести сотрудников за штат?</span><span class="accordion__head-icon"></span>
+                    </button>
+                    <div class="accordion__content js-drop-menu-container">
+                      <div class="accordion__content-inner">
+                        <p>Какой процесс в бизнесе не нуждается в квалифицированных сотрудниках? Всем компаниям необходимы хорошие специалисты, но не все имеют возможность содержать огромный штат персонала. По этой причине многие украинские представители бизнеса пользуются услугами внештатников и передают бизнес-процессы на обслуживание компаний-подрядчиков.</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="callback-section">
+          <picture>
+            <source media="(max-width: 767px)" srcset="assets/images/form-circle.svg">
+            <img class="callback-section__img" src="assets/images/form-bg.svg" alt="Давайте обсудим вашу задачу">
+          </picture>
+          <div class="site-container">
+            <h2 class="callback-section__heading site-heading">Давайте обсудим вашу задачу</h2>
+            <form class="callback-section__form" data-need-validation>
+              <div class="callback-section__form-container">
+                <label class="input-label callback-section__label"><span class="input-label__text">Имя</span>
+                  <input class="input" type="text" name="name" placeholder="Ваше имя" data-parsley-required>
+                </label>
+                <label class="input-label callback-section__label"><span class="input-label__text">Номер телефона</span>
+                  <input class="input js-phone-mask" type="text" name="phone" placeholder="+7 (___) ___-__-__" data-parsley-required data-parsley-phone>
+                </label>
+                <label class="input-label callback-section__label"><span class="input-label__text">Сообщение</span>
+                  <textarea class="textarea" name="text" placeholder="Напишите нам"></textarea>
+                </label>
+              </div>
+              <div class="callback-section__form-btn-wrapper">
+                <button class="button button--white">Отправить</button>
+                <div class="agreement">Нажимая на кнопку «Отправить» вы соглашаетесь с<a heref="/">политикой конфиденциальности</a>и<a href="/">правилами обработки персональных данных</a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
       </main>
 
       <footer class="footer">
@@ -379,12 +574,27 @@
         <div class="modal__content">
           <button class="button-reset modal__close-btn modal-close" type="button"><span></span><span></span>
           </button>
-          <div class="modal__legend">Поздравляем вы открыли модалку!</div>
+          <div class="modal__legend">Заказать звонок</div>
+          <p class="modal__text">Оставьте ваш номер телефона и мы с вами свяжемся</p>
+          <form class="modal__from" data-need-validation>
+            <label class="input-label callback-section__label modal__from-label"><span class="input-label__text">Имя</span>
+              <input class="input input--grey" type="text" name="name" placeholder="Ваше имя" data-parsley-required>
+            </label>
+            <label class="input-label callback-section__label"><span class="input-label__text">Номер телефона</span>
+              <input class="input input--grey js-phone-mask" type="text" name="phone" placeholder="+7 (___) ___-__-__" data-parsley-required data-parsley-phone>
+            </label>
+            <div class="agreement">Нажимая на кнопку «Отправить» вы соглашаетесь с<a heref="/">политикой конфиденциальности</a>и<a href="/">правилами обработки персональных данных</a>
+            </div>
+            <button class="button button--small">Заказать звонок</button>
+          </form>
         </div>
       </div>
     </div>
 
   </body>
+  <script>
+    const path = 'assets/'
+  </script>
   <script src="assets/js/main.js?v=0.0.0.0"></script>
   <script src="assets/js/backend.js?v=0.0.0.0"></script>
 </html>
