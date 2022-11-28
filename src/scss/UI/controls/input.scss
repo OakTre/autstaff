@@ -8,6 +8,11 @@
   border: 1px solid currentcolor;
   border-radius: 0.4rem;
 
+  &--grey {
+    border-color: #777E96;
+    color: #777E96;
+  }
+
   @include placeholder() {
     color: currentcolor;
     font: var(--font-16-24-reg-inter);

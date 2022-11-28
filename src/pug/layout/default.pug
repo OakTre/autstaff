@@ -24,5 +24,7 @@ html(lang=siteLang)
       include ../parts/modals/modal.pug
 
   block scripts
+    script.
+      const path = 'assets/'
     script(src="assets/js/main.js?v=" + siteVersion)
     script(src="assets/js/backend.js?v=" + siteVersion)

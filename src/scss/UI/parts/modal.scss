@@ -5,6 +5,7 @@
   z-index: 50;
   width: 100%;
   height: 100%;
+  color: var(--color-dark-grey);
   background-color: rgba($color: #1e1e1e, $alpha: 60%);
   visibility: hidden;
   opacity: 0;
@@ -22,21 +23,33 @@
     left: 50%;
     display: none;
     width: 100%;
-    max-width: 50rem;
+    max-width: 58.6rem;
     height: auto;
     background-color: var(--color-white);
     border-radius: 1.6rem;
-    box-shadow: 0 0 1rem rgba($color: #000, $alpha: 10%);
+    box-shadow: 0 0 1rem rgba($color: #777E96, $alpha: 60%);
     transform: translate(-50%, -50%);
 
     &.modal-open {
       display: block;
     }
+
+    @include mq(sm) {
+      width: 100%;
+      max-width: 100%;
+      height: 100%;
+      overflow: auto;
+      border-radius: 0;
+    }
   }
 
   &__content {
     position: relative;
-    padding: 3.4rem 4rem;
+    padding: 4rem;
+
+    @include mq(sm) {
+      padding: 6.5rem 1.6rem;
+    }
   }
 
   &__close-btn {
@@ -87,6 +100,39 @@
   }
 
   &__legend {
+    margin-bottom: 1.2rem;
+    color: var(--color-light-blue);
+    font: var(--font-36-52-mont);
     text-align: center;
+
+    @include mq(sm) {
+      margin-bottom: 1.2rem;
+      font: var(--font-32-40-mont);
+    }
+  }
+
+  &__text {
+    margin-bottom: 3.2rem;
+    text-align: center;
+
+    @include mq(sm) {
+      margin-bottom: 2.4rem;
+      font: var(--font-14-20-reg-inter);
+    }
+  }
+
+  &__from {
+    width: 100%;
+    max-width: 37.4rem;
+    margin: 0 auto;
+
+    &-label {
+      margin-bottom: 2rem;
+    }
+
+    .agreement {
+      margin-top: 1.2rem;
+      margin-bottom: 2rem;
+    }
   }
 }

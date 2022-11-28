@@ -6,6 +6,8 @@ import initModal from './modules/initModal';
 import openMenu from './modules/openMenu';
 import slider from './modules/slider';
 import accordion from './modules/accordion';
+import validation from './modules/validation';
+import phoneMask from './modules/inputmask';
 
 documenReady(() => {
   window.___YOUR_PROJECT___API = { };
@@ -15,4 +17,6 @@ documenReady(() => {
   openMenu();
   slider();
   accordion();
+  validation();
+  phoneMask();
 });

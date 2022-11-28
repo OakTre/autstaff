@@ -1,16 +1,18 @@
 section.callback-section
-  img(src="assets/images/form-bg.svg" alt="Давайте обсудим вашу задачу" class="callback-section__img")
+  picture
+    source(media="(max-width: 767px)" srcset="assets/images/form-circle.svg")
+    img(src="assets/images/form-bg.svg" alt="Давайте обсудим вашу задачу" class="callback-section__img")
   .site-container
     h2.callback-section__heading.site-heading
       | Давайте обсудим вашу задачу
-    from.callback-section__form
+    form.callback-section__form(data-need-validation)
       .callback-section__form-container
         label.input-label.callback-section__label
           span.input-label__text Имя
-          input(type="text" class="input" name="name" placeholder="Ваше имя")
+          input(type="text" class="input" name="name" placeholder="Ваше имя" data-parsley-required)
         label.input-label.callback-section__label
-          span.input-label__text Имя
-          input(type="text" class="input" name="name" placeholder="Ваше имя")
+          span.input-label__text Номер телефона
+          input(type="text" class="input js-phone-mask" name="phone" placeholder="+7 (___) ___-__-__" data-parsley-required data-parsley-phone)
         label.input-label.callback-section__label
           span.input-label__text Сообщение
           textarea(class="textarea" name="text" placeholder="Напишите нам")

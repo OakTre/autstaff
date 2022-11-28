@@ -238,7 +238,48 @@ a:focus {
 .site-heading {
   font: var(--font-72-80-mont);
 
+  @include mq(lg) {
+    font: var(--font-47-52-mont);
+  }
+
   @include mq(sm) {
     font: var(--font-38-44-mont);
+  }
+}
+
+.error {
+  position: absolute;
+  top: calc(100% + 1.3rem);
+  left: 0;
+  z-index: 5;
+  width: auto;
+  padding: 1rem;
+  background-color: var(--color-white);
+  border-radius: 0.4rem;
+  font: var(--font-12-16-reg-inter);
+  color: var(--color-red);
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 10px rgba($color: #777E96, $alpha: 0.4);
+
+  &::before {
+    position: absolute;
+    top: -1rem;
+    left: 1rem;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent transparent #fff;
+    border-width: 0 1.1rem 1.5rem;
+    content: "";
+  }
+
+  .icon {
+    width: 1.2rem;
+    height: 1.2rem;
+    fill: none;
+    stroke: currentcolor;
+    flex-shrink: 0;
+    margin-right: 0.4rem;
   }
 }

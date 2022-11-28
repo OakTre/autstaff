@@ -4,4 +4,17 @@
       span
       span
     .modal__legend
-      | Поздравляем вы открыли модалку!
+      | Заказать звонок
+    p.modal__text
+      | Оставьте ваш номер телефона и мы с вами свяжемся
+    form.modal__from(data-need-validation)
+      label.input-label.callback-section__label.modal__from-label
+        span.input-label__text Имя
+        input(type="text" class="input input--grey" name="name" placeholder="Ваше имя" data-parsley-required)
+      label.input-label.callback-section__label
+        span.input-label__text Номер телефона
+        input(type="text" class="input input--grey js-phone-mask" name="phone" placeholder="+7 (___) ___-__-__" data-parsley-required data-parsley-phone)
+      .agreement
+        | Нажимая на кнопку «Отправить» вы соглашаетесь с #[a(heref="/") политикой конфиденциальности] и #[a(href="/") правилами обработки персональных данных]
+      button.button.button--small
+        | Заказать звонок

@@ -1,5 +1,6 @@
 .callback-section {
   position: relative;
+  z-index: 2;
   padding: 10rem 0;
   overflow: hidden;
   color: var(--color-white);
@@ -8,6 +9,11 @@
   &__heading {
     max-width: 58.4rem;
     margin-bottom: 6.6rem;
+
+    @include mq(sm) {
+      max-width: 33rem;
+      margin-bottom: 2.8rem;
+    }
   }
 
   &__form {
@@ -20,12 +26,28 @@
       grid-template-columns: repeat(2, 1fr);
       gap: var(--grid-offset);
       width: 100%;
+
+      @include mq(sm) {
+        display: block;
+      }
+    }
+
+    @include mq(sm) {
+      max-width: 100%;
     }
   }
 
   &__label {
     &:last-child {
       grid-column: 2 span;
+    }
+
+    @include mq(sm) {
+      margin-bottom: 1.6rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 
@@ -37,14 +59,46 @@
     .agreement {
       margin-left: 2.4rem;
     }
+
+    @include mq(sm) {
+      flex-direction: column;
+      align-items: flex-start;
+
+      .agreement {
+        margin-top: 1.2rem;
+        margin-left: 0;
+      }
+    }
   }
 
   &__img {
     position: absolute;
     right: 0;
     bottom: -0.3rem;
+    z-index: -1;
     width: 82.9rem;
     height: 71rem;
     object-fit: contain;
+
+    @include mq(lg) {
+      width: 62.9rem;
+      height: 51rem;
+    }
+
+    @include mq(sm) {
+      top: 2.8rem;
+      right: 2.6rem;
+      bottom: auto;
+      width: 6.7rem;
+      height: 6.7rem;
+    }
+  }
+
+  @include mq(sm) {
+    padding: 4.8rem 0;
+    background-image: url("../images/bg-form.svg");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 35.2rem 20.5rem;
   }
 }
