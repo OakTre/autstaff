@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="assets/css/style.min.css?v=0.0.0.0">
   </head>
   <body class="page-home">
+    <div class="preloader"></div>
     <div class="page-wrapper">
 
       <header class="header header--bg fix-block">
@@ -157,51 +158,53 @@
         <div class="advantages">
           <div class="site-container advantages__container">
             <div class="advantages__container-col">
-              <ul class="advantages-list">
-                <li class="advantages-list__item">Легально</li>
-                <li class="advantages-list__item">Экономично</li>
-                <li class="advantages-list__item">Удобно</li>
-                <li class="advantages-list__item">Безопасно</li>
+              <ul class="advantages-list js-advantages-list">
+                <li class="advantages-list__item js-nav-item" data-nav-parent="nav0">Легально</li>
+                <li class="advantages-list__item js-nav-item" data-nav-parent="nav1">Экономично</li>
+                <li class="advantages-list__item js-nav-item" data-nav-parent="nav2">Удобно</li>
+                <li class="advantages-list__item js-nav-item" data-nav-parent="nav3">Безопасно</li>
               </ul>
             </div>
             <div class="advantages__container-col">
-              <section class="advantages-block section">
-                <img class="advantages-block__image" src="assets/images/advantages/img1.svg" alt="Легально">
-                <div class="advantages-block__content">
-                  <h3>Легально</h3>
-                  <p>Аутстаффинг – это выведение персонала за штат компании. Персонал заключает трудовые договоры не с вами, а с организацией-посредником, или аутстаффером.</p>
-                  <p>Мы одни из немногих официальных агентств занятости, аккредитованное ФСТЗ РОСТРУД. Поэтому наша деятельность аутстаффинга является полностью легальной.</p>
-                </div>
-              </section>
-              <section class="advantages-block section">
-                <img class="advantages-block__image" src="assets/images/advantages/img1.svg" alt="Легально">
-                <div class="advantages-block__content">
-                  <h3>Экономично</h3>
-                  <p>Аутстаффинг – это выведение персонала за штат компании. Персонал заключает трудовые договоры не с вами, а с организацией-посредником, или аутстаффером.</p>
-                  <p>Мы одни из немногих официальных агентств занятости, аккредитованное ФСТЗ РОСТРУД. Поэтому наша деятельность аутстаффинга является полностью легальной.</p>
-                </div>
-              </section>
-              <section class="advantages-block section">
-                <img class="advantages-block__image" src="assets/images/advantages/img1.svg" alt="Легально">
-                <div class="advantages-block__content">
-                  <h3>Удобно</h3>
-                  <p>Аутстаффинг – это выведение персонала за штат компании. Персонал заключает трудовые договоры не с вами, а с организацией-посредником, или аутстаффером.</p>
-                  <p>Мы одни из немногих официальных агентств занятости, аккредитованное ФСТЗ РОСТРУД. Поэтому наша деятельность аутстаффинга является полностью легальной.</p>
-                </div>
-              </section>
-              <section class="advantages-block section">
-                <img class="advantages-block__image" src="assets/images/advantages/img1.svg" alt="Легально">
-                <div class="advantages-block__content">
-                  <h3>Безопасно</h3>
-                  <p>Аутстаффинг – это выведение персонала за штат компании. Персонал заключает трудовые договоры не с вами, а с организацией-посредником, или аутстаффером.</p>
-                  <p>Мы одни из немногих официальных агентств занятости, аккредитованное ФСТЗ РОСТРУД. Поэтому наша деятельность аутстаффинга является полностью легальной.</p>
-                </div>
-              </section>
+              <div class="js-advantages-blocks">
+                <section class="advantages-block section js-advantages-block" data-nav-item="nav0">
+                  <img class="advantages-block__image" src="assets/images/advantages/img1.svg" alt="Легально">
+                  <div class="advantages-block__content">
+                    <h3>Легально</h3>
+                    <p>Аутстаффинг – это выведение персонала за штат компании. Персонал заключает трудовые договоры не с вами, а с организацией-посредником, или аутстаффером.</p>
+                    <p>Мы одни из немногих официальных агентств занятости, аккредитованное ФСТЗ РОСТРУД. Поэтому наша деятельность аутстаффинга является полностью легальной.</p>
+                  </div>
+                </section>
+                <section class="advantages-block section js-advantages-block" data-nav-item="nav1">
+                  <img class="advantages-block__image" src="assets/images/advantages/img1.svg" alt="Легально">
+                  <div class="advantages-block__content">
+                    <h3>Экономично</h3>
+                    <p>Аутстаффинг – это выведение персонала за штат компании. Персонал заключает трудовые договоры не с вами, а с организацией-посредником, или аутстаффером.</p>
+                    <p>Мы одни из немногих официальных агентств занятости, аккредитованное ФСТЗ РОСТРУД. Поэтому наша деятельность аутстаффинга является полностью легальной.</p>
+                  </div>
+                </section>
+                <section class="advantages-block section js-advantages-block" data-nav-item="nav2">
+                  <img class="advantages-block__image" src="assets/images/advantages/img1.svg" alt="Легально">
+                  <div class="advantages-block__content">
+                    <h3>Удобно</h3>
+                    <p>Аутстаффинг – это выведение персонала за штат компании. Персонал заключает трудовые договоры не с вами, а с организацией-посредником, или аутстаффером.</p>
+                    <p>Мы одни из немногих официальных агентств занятости, аккредитованное ФСТЗ РОСТРУД. Поэтому наша деятельность аутстаффинга является полностью легальной.</p>
+                  </div>
+                </section>
+                <section class="advantages-block section js-advantages-block" data-nav-item="nav3">
+                  <img class="advantages-block__image" src="assets/images/advantages/img1.svg" alt="Легально">
+                  <div class="advantages-block__content">
+                    <h3>Безопасно</h3>
+                    <p>Аутстаффинг – это выведение персонала за штат компании. Персонал заключает трудовые договоры не с вами, а с организацией-посредником, или аутстаффером.</p>
+                    <p>Мы одни из немногих официальных агентств занятости, аккредитованное ФСТЗ РОСТРУД. Поэтому наша деятельность аутстаффинга является полностью легальной.</p>
+                  </div>
+                </section>
+              </div>
             </div>
           </div>
         </div>
         <div class="grey-bg section">
-          <section class="feautures js-feautures-swiper-parent">
+          <section class="feautures js-feautures-swiper-parent js-anim-fade-out">
             <div class="site-container feautures__container">
               <div class="feautures__container-col">
                 <div class="feautures__line"></div>
@@ -257,7 +260,7 @@
           </section>
           <section class="callback section">
             <div class="site-container">
-              <div class="callback__container">
+              <div class="callback__container js-anim-fade-out">
                 <h3 class="callback__heading">Получите бесплатную консультацию</h3>
                 <div class="callback__btn-wrapper">
                   <button class="button button--white">Обсудить задачу</button>
@@ -267,7 +270,7 @@
               </div>
             </div>
           </section>
-          <section class="prices">
+          <section class="prices js-anim-fade-out" data-intersection-ratio="0.1">
             <div class="site-container prices__container">
               <h2 class="prices__heading site-heading">Гибкие цены и&nbsp;скидки</h2>
               <ul class="prices__list">
@@ -306,7 +309,7 @@
               </ul>
             </div>
           </section>
-          <section class="prices-include section">
+          <section class="prices-include section js-anim-fade-out" data-intersection-ratio="0.1">
             <div class="site-container">
               <h3 class="prices-include__heading site-heading">Что входит в стоимость</h3>
               <div class="prices-include__container">
@@ -329,7 +332,7 @@
               </div>
             </div>
           </section>
-          <section class="help">
+          <section class="help js-anim-fade-out">
             <div class="site-container">
               <h2 class="help__heading site-heading">С чем мы помогаем</h2>
               <div class="help__container">
@@ -368,10 +371,10 @@
                 </div>
               </div>
             </div>
-            <ul class="results-steps">
-              <li class="results-steps__item-line"><span class="results-steps__item-line-inner"></span>
+            <ul class="results-steps js-results-steps">
+              <li class="results-steps__item-line js-results-line"><span class="results-steps__item-line-inner"></span>
               </li>
-              <li class="results-steps__item">
+              <li class="results-steps__item js-results-item">
                 <div class="results-steps__block">
                   <div class="results-steps__legend"><span>этап</span>
                   </div>
@@ -384,7 +387,7 @@
                   </div>
                 </div>
               </li>
-              <li class="results-steps__item">
+              <li class="results-steps__item js-results-item">
                 <div class="results-steps__block">
                   <div class="results-steps__legend"><span>этап</span>
                   </div>
@@ -415,7 +418,7 @@
                   </div>
                 </div>
               </li>
-              <li class="results-steps__item">
+              <li class="results-steps__item js-results-item">
                 <div class="results-steps__block">
                   <div class="results-steps__legend"><span>этап</span>
                   </div>
@@ -428,7 +431,7 @@
                   </div>
                 </div>
               </li>
-              <li class="results-steps__item">
+              <li class="results-steps__item js-results-item">
                 <div class="results-steps__block">
                   <div class="results-steps__legend"><span>этап</span>
                   </div>
@@ -441,7 +444,7 @@
                   </div>
                 </div>
               </li>
-              <li class="results-steps__item">
+              <li class="results-steps__item js-results-item">
                 <div class="results-steps__block">
                   <div class="results-steps__legend"><span>этап</span>
                   </div>
@@ -460,7 +463,7 @@
             </ul>
           </div>
         </section>
-        <section class="section faq">
+        <section class="section faq js-anim-fade-out">
           <div class="site-container faq__container">
             <div class="faq__block">
               <h2 class="faq__heading site-heading">Нас часто спрашивают — мы отвечаем</h2>
@@ -510,8 +513,8 @@
             <img class="callback-section__img" src="assets/images/form-bg.svg" alt="Давайте обсудим вашу задачу">
           </picture>
           <div class="site-container">
-            <h2 class="callback-section__heading site-heading">Давайте обсудим вашу задачу</h2>
-            <form class="callback-section__form" data-need-validation>
+            <h2 class="callback-section__heading site-heading js-anim-fade-out" data-intersection-ratio="0.1">Давайте обсудим вашу задачу</h2>
+            <form class="callback-section__form js-anim-fade-out" data-intersection-ratio="0.1" data-need-validation>
               <div class="callback-section__form-container">
                 <label class="input-label callback-section__label"><span class="input-label__text">Имя</span>
                   <input class="input" type="text" name="name" placeholder="Ваше имя" data-parsley-required>
