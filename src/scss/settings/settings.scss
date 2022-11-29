@@ -186,6 +186,17 @@ img {
 .page-main {
   flex-grow: 1;
   padding-top: var(--header-height);
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-grey);
+    content: "";
+  }
 }
 
 .disable-scroll {
@@ -282,4 +293,33 @@ a:focus {
     flex-shrink: 0;
     margin-right: 0.4rem;
   }
+}
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 30;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-grey);
+  transition: opacity var(--transition), visibility var(--transition);
+
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.js-anim-fade-out {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(2rem);
+}
+
+.fade-out {
+  opacity: 1;
+  visibility: inherit;
+  transition: opacity .4s, visibility .4s, transform .4s ease-out;
+  transform: translateY(0);
 }

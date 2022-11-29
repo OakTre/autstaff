@@ -3,9 +3,9 @@ section.callback-section
     source(media="(max-width: 767px)" srcset="assets/images/form-circle.svg")
     img(src="assets/images/form-bg.svg" alt="Давайте обсудим вашу задачу" class="callback-section__img")
   .site-container
-    h2.callback-section__heading.site-heading
+    h2.callback-section__heading.site-heading.js-anim-fade-out(data-intersection-ratio="0.1")
       | Давайте обсудим вашу задачу
-    form.callback-section__form(data-need-validation)
+    form.callback-section__form.js-anim-fade-out(data-intersection-ratio="0.1" data-need-validation)
       .callback-section__form-container
         label.input-label.callback-section__label
           span.input-label__text Имя

@@ -59,18 +59,28 @@
     color: var(--color-dark-grey);
     font: var(--font-20-28-inter-reg);
     background-color: var(--color-white);
+    transition: color var(--transition);
     counter-increment: order;
 
     &::before {
       margin-right: 4.5rem;
       color: currentcolor;
       font: 700 9rem/1 var(--main-ff);
+      transition: color var(--transition);
       content: counter(order);
 
       @include mq(sm) {
         flex-shrink: 0;
         margin-right: 2rem;
         font: 700 6rem/1 var(--main-ff);
+      }
+    }
+
+    &.is-active {
+      color: var(--color-light-blue);
+
+      &::before {
+        color: var(--color-light-blue);
       }
     }
 
@@ -116,6 +126,10 @@
     &:last-child {
       padding-bottom: 0;
       border: none;
+
+      .results-steps__block {
+        background-color: var(--color-white);
+      }
 
       &::before {
         content: none;

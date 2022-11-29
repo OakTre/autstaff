@@ -6,21 +6,22 @@
 .advantages
   .site-container.advantages__container
     .advantages__container-col
-      ul.advantages-list
-        for item in adv_list
-          li.advantages-list__item= item
+      ul.advantages-list.js-advantages-list
+        for item, index in adv_list
+          li.advantages-list__item.js-nav-item(data-nav-parent=`nav${index}`)= item
 
     .advantages__container-col
-      for item in adv_list
-        section.advantages-block.section
-          img(src="assets/images/advantages/img1.svg" alt="Легально" class="advantages-block__image")
-          .advantages-block__content
-            h3= item
-            p
-              | Аутстаффинг – это выведение персонала за штат компании.
-              | Персонал заключает трудовые договоры не с вами,
-              | а с организацией-посредником, или аутстаффером.
-            p
-              | Мы одни из немногих официальных агентств занятости,
-              | аккредитованное ФСТЗ РОСТРУД. Поэтому наша деятельность
-              | аутстаффинга является полностью легальной.
+      .js-advantages-blocks
+        for item, index in adv_list
+          section.advantages-block.section.js-advantages-block(data-nav-item=`nav${index}`)
+            img(src="assets/images/advantages/img1.svg" alt="Легально" class="advantages-block__image")
+            .advantages-block__content
+              h3= item
+              p
+                | Аутстаффинг – это выведение персонала за штат компании.
+                | Персонал заключает трудовые договоры не с вами,
+                | а с организацией-посредником, или аутстаффером.
+              p
+                | Мы одни из немногих официальных агентств занятости,
+                | аккредитованное ФСТЗ РОСТРУД. Поэтому наша деятельность
+                | аутстаффинга является полностью легальной.
