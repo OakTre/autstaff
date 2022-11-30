@@ -1,18 +1,18 @@
 .nav {
-  &__list {
+  ul {
     display: flex;
     align-items: center;
-  }
 
-  &__item {
-    margin-right: 1.6rem;
+    li {
+      margin-right: 1.6rem;
 
-    &:last-child {
-      margin-right: 0;
+      &:last-child {
+        margin-right: 0;
+      }
+
+      a {
+        font: var(--font-16-24-reg-inter);
+      }
     }
-  }
-
-  &__link {
-    font: var(--font-16-24-reg-inter);
   }
 }

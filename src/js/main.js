@@ -12,6 +12,7 @@ import fixedFeautureNav from './modules/fixedFeautureNav';
 import resultAnimation from './modules/resultAnimation';
 import closePreloader from './modules/closePreloader';
 import blocksReveal from './modules/animatedBlocks';
+import anchorLinks from './modules/scrollTo';
 
 window.addEventListener("load", () => {
   const prelaoder = document.querySelector(".preloader");
@@ -23,7 +24,7 @@ window.addEventListener("load", () => {
 });
 
 documenReady(() => {
-  window.___YOUR_PROJECT___API = { };
+  window.autstaff_api = { menuFlag: false };
 
   lazyIMages();
   initModal();
@@ -35,4 +36,5 @@ documenReady(() => {
   fixedFeautureNav();
   resultAnimation();
   blocksReveal();
+  anchorLinks();
 });
