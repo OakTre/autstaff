@@ -270,7 +270,7 @@
                     <p class="prices-card__legend-text prices-card__prices">36 000 ₽<span class="prices-card__legend-text prices-card__old-price">42 000₽</span>
                     </p>
                     <p class="prices-card__legend-text">за 12 месяцев</p>
-                    <button class="button prices-card__btn">Выбрать тариф</button>
+                    <button class="button prices-card__btn" data-path="modal" data-tarif="start">Выбрать тариф</button>
                   </article>
                 </li>
                 <li class="prices__item">
@@ -281,7 +281,7 @@
                     <p class="prices-card__legend-text prices-card__prices">36 000 ₽<span class="prices-card__legend-text prices-card__old-price">42 000₽</span>
                     </p>
                     <p class="prices-card__legend-text">за 12 месяцев</p>
-                    <button class="button prices-card__btn">Выбрать тариф</button>
+                    <button class="button prices-card__btn" data-path="modal" data-tarif="med">Выбрать тариф</button>
                   </article>
                 </li>
                 <li class="prices__item">
@@ -290,7 +290,7 @@
                     <p class="prices-card__legend-text">Учтём все требования</p>
                     <div class="prices-card__price">от 2 000 ₽</div>
                     <p class="prices-card__legend-text">в месяц</p>
-                    <button class="button prices-card__btn">Выбрать тариф</button>
+                    <button class="button prices-card__btn" data-path="modal" data-tarif="korp">Выбрать тариф</button>
                   </article>
                   <div class="prices-card__sub-text prices-card__legend-text">+20% к базовой стоимости при работе с НДС.</div>
                 </li>
@@ -562,6 +562,7 @@
           <div class="modal__legend">Заказать звонок</div>
           <p class="modal__text">Оставьте ваш номер телефона и мы с вами свяжемся</p>
           <form class="modal__from" data-need-validation>
+            <input type="hidden" name="tarif">
             <label class="input-label callback-section__label modal__from-label"><span class="input-label__text">Имя</span>
               <input class="input input--grey" type="text" name="name" placeholder="Ваше имя" data-parsley-required>
             </label>
